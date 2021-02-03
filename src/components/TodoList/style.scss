@@ -1,0 +1,16 @@
+.todo-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  width: calc(100% + 20px);
+  padding-top: 10px;
+  justify-content: center;
+
+  &__item {
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+  }
+}
