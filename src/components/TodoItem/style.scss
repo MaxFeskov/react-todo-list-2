@@ -1,0 +1,50 @@
+.todo-item {
+  height: 100%;
+  position: relative;
+  box-shadow: 0 0 5px 0 rgba(153, 153, 153, 0.5);
+  padding: 20px;
+
+  &--done {
+    background: #66bb6a;
+  }
+
+  &--fail {
+    background: #ef5350;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+    border: none;
+    outline-color: #1976d2;
+
+    &[readonly] {
+      outline: none;
+    }
+  }
+
+  &__text {
+    margin-bottom: 1em;
+    border: none;
+    width: 100%;
+    height: calc(1.35 * 7em + 2px);
+    resize: none;
+    outline-color: #1976d2;
+
+    &[readonly] {
+      outline: none;
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-gap: 15px;
+  }
+}
